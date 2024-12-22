@@ -1,5 +1,5 @@
 # Spatial Equity in Career and Technical Education in New Jersey
-**Author:** [Your Name]  
+**Author:** Zarak Khan  
 **Course:** 34:816:651:90 SEMINAR IN PUBLIC INFORMATICS  
 
 ---
