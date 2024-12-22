@@ -24,7 +24,7 @@ This map visualizes the percentage of people living below the poverty line acros
 
 ### **Institution Accessibility and Buffers**  
 ![Institution Accessibility](institutions_with_buffers.png)  
-This map highlights career and technical institutions with 1-mile buffer zones, clipped to county boundaries. The visualization helps assess the immediate accessibility of these institutions and identifies areas that lack nearby facilities.
+This map highlights career and technical institutions with 1-mile buffer zones clipped to county boundaries. The visualization helps assess the immediate accessibility of these institutions and identifies areas that lack nearby facilities.
 
 ---
 
@@ -34,10 +34,7 @@ This map highlights career and technical institutions with 1-mile buffer zones, 
 Explore the interactive map below to view institution locations, poverty levels, and accessibility buffers:  
 [Interactive Map](interactive_map.html)  
 
-- **Features**:
-  - Layers: Poverty levels as a choropleth, institution points, and 1-mile buffers.
-  - Tooltips: Hover over counties or institutions for details like poverty percentage, total population, and institution name.
-  - Heatmap: Displays institution density to highlight regions with high or low educational resource concentration.
+This map shows the location of accredited career and technical institutions overlaid with county poverty levels as a choropleth. Users can hover over institutions for details, including name, address, and contact information. The map also allows toggling between layers to explore correlations with population density and socioeconomic factors.
 
 ---
 
@@ -56,7 +53,7 @@ Explore the interactive map below to view institution locations, poverty levels,
 ### **Poverty Data**  
 - **Source:** [American Community Survey (ACS) 5-Year Estimates (2018–2022)](https://data.census.gov/table/ACSST5Y2022.S1701?q=Income%20and%20Poverty&g=040XX00US34$0500000)  
 - **Prepared By:** U.S. Census Bureau  
-- **Description:** Poverty statistics, including total population, individuals below poverty level, and percent below poverty, were extracted and cleaned to align with county boundaries.  
+- **Description:** Poverty statistics, including total population, individuals below the poverty level, and percent below poverty, were extracted and cleaned to align with county boundaries.  
 
 ---
 
@@ -72,13 +69,13 @@ Institution locations were filtered to include only those within New Jersey and 
 A buffer analysis was conducted to highlight underserved areas, focusing on proximity to institutions. Counties with limited or no buffer overlap were identified as potential underserved regions.  
 
 ### **Heatmap and Interactive Layers**  
-An interactive map was developed using Folium, incorporating layers for institution locations, poverty levels, and a heatmap of institution density. Tooltips and pop-ups provide additional context, making the map both informative and engaging.  
+An interactive map was developed using Folium, incorporating layers for institution locations, poverty levels, and a heatmap of institution density. Tooltips and pop-ups provide additional context, making the map informative and engaging.  
 
 ---
 
 ## **Key Findings and Insights**  
 
-- **Institution Distribution and Poverty**: Counties with a higher number of institutions, such as Essex, Hudson, and Passaic, generally show higher poverty rates. This could be due to factors such as population density and cost of living in these areas.  
+- **Institution Distribution and Poverty**: Counties with high number of institutions, such as Essex, Hudson, and Passaic, generally show higher poverty rates. This could be due to factors such as population density and cost of living in these areas.  
 - **Underserved Regions**: Rural counties with fewer institutions often exhibit lower poverty rates but may lack sufficient access to educational resources.  
 - **Policy Implications**: The findings suggest the need for targeted expansion of career and technical education infrastructure in underserved areas and further exploration of socioeconomic barriers in urban counties with high poverty levels.
 
