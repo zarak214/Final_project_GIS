@@ -1,4 +1,4 @@
-# Spatial Analysis of Career and Technical Education in New Jersey
+# Spatial Analysis of Career and Technical Institutions in New Jersey
 **Author:** Zarak Khan  
 **Course:** 34:816:651:90 SEMINAR IN PUBLIC INFORMATICS  
 
@@ -22,7 +22,7 @@ The goal of this project is to provide insights into spatial equity in education
 ![Poverty Levels by County](poverty_levels_by_county.png)  
 This map visualizes the percentage of people living below the poverty line across New Jersey counties. The data was sourced from the American Community Survey (ACS) 5-Year Estimates (2018–2022). Counties with higher poverty rates are highlighted, providing context for assessing educational accessibility.  
 
-### **Institution Accessibility and Buffers**  
+### **Institution Accessibility with Buffers**  
 ![Institution Accessibility](institutions_with_buffers.png)  
 This map highlights career and technical institutions with 1-mile buffer zones clipped to county boundaries. The visualization helps assess the immediate accessibility of these institutions and identifies areas that lack nearby facilities.
 
@@ -40,36 +40,36 @@ This map shows the location of accredited career and technical institutions over
 
 ## **Data Sources**  
 
-### **County Boundaries**  
+### **NJ County Boundaries Dataset**  
 - **Source:** [New Jersey Geographic Information Network (NJGIN)](https://www.nj.gov/njgin/edata/boundaries/index.html)  
 - **Prepared By:** NJ Office of Information Technology, Office of GIS (NJOGIS)  
 - **Description:** This dataset provides accurate county boundaries and was used as the base geography for all analyses.  
 
-### **Career and Technical Institutions**  
+### **Career and Technical Institutions in NJ Dataset**  
 - **Source:** [data.nj.gov](https://data.nj.gov/)  
 - **Prepared By:** New Jersey State Government  
 - **Description:** This dataset includes the location and attributes of accredited career and technical institutions. Latitude and longitude coordinates were verified for spatial mapping.  
 
-### **Poverty Data**  
+### **Poverty Level by County Dataset**  
 - **Source:** [American Community Survey (ACS) 5-Year Estimates (2018–2022)](https://data.census.gov/table/ACSST5Y2022.S1701?q=Income%20and%20Poverty&g=040XX00US34$0500000)  
 - **Prepared By:** U.S. Census Bureau  
 - **Description:** Poverty statistics, including total population, individuals below the poverty level, and percent below poverty, were extracted and cleaned to align with county boundaries.  
 
 ---
 
-## **Analysis and Methodology**  
+## **Methodology**  
 
 ### **Poverty Levels by County**  
 Poverty data was processed and merged with county boundary data. A thematic map was created to visualize poverty levels, with counties symbolized by the percentage of the population living below the poverty line.  
 
-### **Institution Accessibility**  
+### **Technical Institution Accessibility**  
 Institution locations were filtered to include only those within New Jersey and spatially joined with county data. Buffers of 1 mile were created around each institution to visualize accessibility and clipped to county boundaries for better spatial representation.  
 
 ### **Buffer Analysis**  
 A buffer analysis was conducted to highlight underserved areas, focusing on proximity to institutions. Counties with limited or no buffer overlap were identified as potential underserved regions.  
 
 ### **Heatmap and Interactive Layers**  
-An interactive map was developed using Folium, incorporating layers for institution locations, poverty levels, and a heatmap of institution density. Tooltips and pop-ups provide additional context, making the map informative and engaging.  
+An interactive map was developed using Folium, incorporating layers for institution locations, poverty levels, and a heatmap of institution density. Tooltips and pop-ups provide additional context, making the map informative and engaging.   
 
 ---
 
